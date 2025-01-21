@@ -77,3 +77,12 @@ function validate() {
     }
     return isValid;
 }
+function func(){
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    if(username === "recipe" && password === "12345"){
+        window.location.href = "dashboard.html";
+    }else{
+        alert("invalid username and password. Please try again.")
+    }
+}
